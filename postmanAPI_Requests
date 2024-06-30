@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "37bf8b34-ff62-46da-9dab-c32d5873f628",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27458498"
+	},
+	"item": [
+		{
+			"name": "addConsumer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123\",\r\n    \"email\": \"123@gmail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addArtist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123\",\r\n    \"email\": \"123@gmail\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"artista1\",\r\n    \"password\": \"54214\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSong",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"1234\",\r\n    \"genero\": \"213421\",\r\n    \"datalancamento\": \"20230101\",\r\n    \"duracao\": \"32424\",\r\n    \"ideditora\": \"1\",\r\n    \"other_artists\": [9],\r\n    \"ola\": \"4124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/song/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addAlbum",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"1234\",\r\n    \"datalancamento\": \"20230101\",\r\n    \"nomeeditora\": \"1214124\",\r\n    \"songs\": [7]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/album/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"album",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchSong",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/song/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"song",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchArtist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/artist_info/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"artist_info",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addGiftcard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjF9.W_Qva7D8ne-XvW5wLJquMOiRqBDEipm5Aok8BBRYvvw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"saldo\": \"25\",\r\n    \"datalimite\": \"20230101\",\r\n    \"number_cards\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/card/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/comments/5/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"5",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playSong",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjV9.Lt3XWQNnL40y6usOm1l0uqn8rY2RyPIDpwMcDvRH37A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateReport",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjh9.vPQkt6_Z6x5weFvLAgdA69OsKq5yejd6kYNM4uIYbJo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/report/202306",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report",
+						"202306"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subcribePremium",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjV9.Lt3XWQNnL40y6usOm1l0uqn8rY2RyPIDpwMcDvRH37A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"period\" : \"SEMESTER\",\r\n    \"cards\": [\"2415713513368681\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/subcription/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subcription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjV9.Lt3XWQNnL40y6usOm1l0uqn8rY2RyPIDpwMcDvRH37A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"123\",\r\n    \"songs\": [1],\r\n    \"visibilidade\": \"PRIVATE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/playlist/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
